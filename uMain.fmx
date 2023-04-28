@@ -1,0 +1,96 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 344
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object pnlHeader: TPanel
+    Align = Top
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 344.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnOpenImage: TButton
+      Align = Left
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Open Image'
+      OnClick = btnOpenImageClick
+    end
+    object btnClose: TButton
+      Align = Right
+      Position.X = 294.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 45.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cleareditbutton'
+      TabOrder = 1
+      Text = 'btnClose'
+    end
+    object ComboBox1: TComboBox
+      Position.X = 152.000000000000000000
+      Position.Y = 9.000000000000000000
+      TabOrder = 2
+      OnChange = ComboBox1Change
+      object ListBoxltem1: TListBoxItem
+        TabOrder = 0
+        Text = 'IMG_1105.JPG'
+      end
+      object ListBoxItem2: TListBoxItem
+        TabOrder = 1
+        Text = 'PAUL.jpg'
+      end
+      object ListBoxItem3: TListBoxItem
+        TabOrder = 2
+        Text = 'R.jpeg'
+      end
+    end
+  end
+  object imgFile: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 344.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 344.000000000000000000
+      Size.Height = 97.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object labelNombre: TLabel
+        Position.X = 124.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 141.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object labelRuta: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 328.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+  end
+end
